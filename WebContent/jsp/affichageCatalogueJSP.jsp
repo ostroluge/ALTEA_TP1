@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="bean.Produit"%>
+<%@ page import="java.util.HashMap"%>
+<%@ page import="java.util.Iterator"%>
 <link rel=stylesheet type="text/css" href="ALTEA_TP1/css/styles.css">
 
 <div class="titre">Catalogue</div>
 <br>
-<br>
-<%@ page import="bean.Produit"%>
-<%@ page import="java.util.HashMap"%>
-<%@ page import="java.util.Iterator"%>
 <% HashMap<String, Produit> produits = (HashMap<String, Produit>) request.getAttribute("produitsBean"); %>
 <%
 	Iterator<Produit> it = produits.values().iterator();
